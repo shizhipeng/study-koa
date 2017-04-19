@@ -20,4 +20,18 @@ module.exports = {
 			}
 		})();
 	},
+
+	delete: async (ctx, next)=>{
+		(async ()=>{
+			var id = ctx.request.query.id;
+			//await userModel.destroy({where: {
+			//	id:id
+			//}});
+			var res = {
+				name: 'nimeia',
+				uid:'aaaaaa'
+			}
+			ctx.response.body=res;
+		})();
+	},
 };
